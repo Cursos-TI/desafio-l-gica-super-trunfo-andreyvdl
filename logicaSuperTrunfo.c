@@ -9,45 +9,30 @@
 // Siga os comentários para implementar cada parte do desafio.
 
 int main() {
-  // Definição das variáveis para armazenar as propriedades das cidades
-  // Você pode utilizar o código do primeiro desafio
   Trunfo cartas[2] = {0};
 
-  // Cadastro das Cartas:
-  // Implemente a lógica para solicitar ao usuário que insira os dados das
-  // cidades utilizando a função scanf para capturar as entradas. utilize o
-  // código do primeiro desafio
-  // Exemplo:
-  // printf("Digite o código da cidade: ");
-  // scanf("%s", codigo);
-  //
-  // (Repita para cada propriedade)
   desafioAnterior(cartas);
 
-  // Comparação de Cartas:
-  // Desenvolva a lógica de comparação entre duas cartas.
-  // Utilize estruturas de decisão como if, if-else para comparar atributos como
-  // população, área, PIB, etc.
-
-  // Exemplo:
-  // if (populacaoA > populacaoB) {
-  //     printf("Cidade 1 tem maior população.\n");
-  // } else {
-  //     printf("Cidade 2 tem maior população.\n");
-  // }
-
-  // Exibição dos Resultados:
-  // Após realizar as comparações, exiba os resultados para o usuário.
-  // Certifique-se de que o sistema mostre claramente qual carta venceu e com
-  // base em qual atributo.
-
-  // Exemplo:
-  // printf("A cidade vencedora é: %s\n", cidadeVencedora);
+  /*
+    2. Calcular Densidade Populacional e PIB per capita: O programa deve calcular e exibir:
+    ◦ Densidade Populacional: População / Área
+    ◦ PIB per capita: PIB / População
+  */
+  for (int i = 0; i < 2; ++i) {
+    printf(
+      "Carta %d:\n"
+      "Densidade populacional: %.2f\n"
+      "PIB per captita: %.2f\n\n",
+      cartas[i].id,
+      cartas[i].densidade_populacional,
+      cartas[i].pib_per_capita
+    );
+  }
 
   printf(
     "Comparação de cartas (Atributo: PIB per Capita):\n"
-    "Carta 1 - %s (%c): %.2f\n"
-    "Carta 2 - %s (%c): %.2f\n",
+    "Carta 1 - %s (%s): %.2f\n"
+    "Carta 2 - %s (%s): %.2f\n",
     cartas[0].nome_da_cidade, cartas[0].estado, cartas[0].pib_per_capita,
     cartas[1].nome_da_cidade, cartas[1].estado, cartas[1].pib_per_capita
   );

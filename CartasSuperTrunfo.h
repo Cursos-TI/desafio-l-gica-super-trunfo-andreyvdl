@@ -3,6 +3,10 @@
 
     #define CODIGO_TAMANHO 4
     #define CIDADE_TAMANHO 256
+    #define ESTADO_TAMANHO 3
+
+    #define LIMPAR_RESTO_DO_INPUT() while((cursor = getchar()) != '\n' && cursor != EOF)
+
 /**
  * Estado: Uma letra de 'A' a 'H' (representando um dos oito estados). Tipo: char
  * Código da Carta: A letra do estado seguida de um número de 01 a 04 (ex: A01, B03). Tipo: char[] (um array de caracteres, ou string)
@@ -13,13 +17,17 @@
  * Número de Pontos Turísticos: A quantidade de pontos turísticos na cidade. Tipo: int
  *
  * nivel 3 altera a populacao para unsigned long int.
+ *
+ * tema 2 nivel 1 altera população para int.
+ * tema 2 nivel 1 altera o estado pra string agora representado por 2 letras.
+ * tema 2 nivel 1 altera indiretamente o código da carta de 'x0y' para 'xxy'.
  */
 typedef struct Trunfo {
     char nome_da_cidade[CIDADE_TAMANHO], codigo_da_carta[CODIGO_TAMANHO];
-    unsigned long int populacao;
+    char estado[ESTADO_TAMANHO];
     float area, pib, densidade_populacional, pib_per_capita, super_poder;
+    int populacao;
     int num_pontos_turisticos, id;
-    char estado;
 } Trunfo;
 
 #endif

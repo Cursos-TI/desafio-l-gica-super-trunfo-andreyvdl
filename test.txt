@@ -1,12 +1,12 @@
-b
-b01
+sp
+sp1
 São Paulo
 99
 120
 300
 50
-a
-a01
+jr
+jr1
 Rio de Janeiro
 100
 60
