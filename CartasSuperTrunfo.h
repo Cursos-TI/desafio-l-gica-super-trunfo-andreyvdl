@@ -21,9 +21,11 @@
  * tema 2 nivel 1 altera população para int.
  * tema 2 nivel 1 altera o estado pra string agora representado por 2 letras.
  * tema 2 nivel 1 altera indiretamente o código da carta de 'x0y' para 'xxy'.
+ *
+ * tema 2 nível 2 altera nome da cidade por nome do país.
  */
 typedef struct Trunfo {
-    char nome_da_cidade[CIDADE_TAMANHO], codigo_da_carta[CODIGO_TAMANHO];
+    char nome_do_pais[CIDADE_TAMANHO], codigo_da_carta[CODIGO_TAMANHO];
     char estado[ESTADO_TAMANHO];
     float area, pib, densidade_populacional, pib_per_capita, super_poder;
     int populacao;

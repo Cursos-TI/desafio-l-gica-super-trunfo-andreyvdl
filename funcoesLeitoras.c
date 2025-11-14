@@ -64,22 +64,22 @@ void lerCodigo(Trunfo *cartas, size_t posicao) {
 }
 
 void lerNome(Trunfo *carta) {
-  char nome_da_cidade[CIDADE_TAMANHO] = {0};
+  char nome_do_pais[CIDADE_TAMANHO] = {0};
   int cursor = 0;
 
   while (1) {
     printf(
-      "Insira o nome da cidade, limite de 255 caracteres, "
+      "Insira o nome do país, limite de 255 caracteres, "
       "os caracteres extras serão ignorados: "
     );
-    if (scanf("%255[^\n]", nome_da_cidade) == EOF)
+    if (scanf("%255[^\n]", nome_do_pais) == EOF)
       exit(1);
 
-    if (strlen(nome_da_cidade) == 0) {
+    if (strlen(nome_do_pais) == 0) {
       printf("O nome da cidade não pode ser deixado em branco!\n");
     } else {
-      for (int i = 0; nome_da_cidade[i]; ++i)
-        carta->nome_da_cidade[i] = nome_da_cidade[i];
+      for (int i = 0; nome_do_pais[i]; ++i)
+        carta->nome_do_pais[i] = nome_do_pais[i];
       break;
     }
   }
