@@ -32,4 +32,93 @@ typedef struct Trunfo {
     int num_pontos_turisticos, id;
 } Trunfo;
 
+    #define OPCOES_0() \
+    printf( \
+        "1) População\n" \
+        "2) Área\n" \
+        "3) PIB\n" \
+        "4) Número de Pontos Turísticos\n" \
+        "5) Densidade demográfica\n" \
+        "6) PIB per Capita\n" \
+        "7) Super poder\n" \
+        "> "\
+    )
+
+    #define OPCOES_1() \
+    printf( \
+        "1) Área\n" \
+        "2) PIB\n" \
+        "3) Número de Pontos Turísticos\n" \
+        "4) Densidade demográfica\n" \
+        "5) PIB per Capita\n" \
+        "6) Super poder\n" \
+        "> "\
+    )
+
+    #define OPCOES_2() \
+    printf( \
+        "1) População\n" \
+        "2) PIB\n" \
+        "3) Número de Pontos Turísticos\n" \
+        "4) Densidade demográfica\n" \
+        "5) PIB per Capita\n" \
+        "6) Super poder\n" \
+        "> "\
+    )
+
+    #define OPCOES_3() \
+    printf( \
+        "1) População\n" \
+        "2) Área\n" \
+        "3) Número de Pontos Turísticos\n" \
+        "4) Densidade demográfica\n" \
+        "5) PIB per Capita\n" \
+        "6) Super poder\n" \
+        "> "\
+    )
+
+    #define OPCOES_4() \
+    printf( \
+        "1) População\n" \
+        "2) Área\n" \
+        "3) PIB\n" \
+        "4) Densidade demográfica\n" \
+        "5) PIB per Capita\n" \
+        "6) Super poder\n" \
+        "> "\
+    )
+
+    #define OPCOES_5() \
+    printf( \
+        "1) População\n" \
+        "2) Área\n" \
+        "3) PIB\n" \
+        "4) Número de Pontos Turísticos\n" \
+        "5) PIB per Capita\n" \
+        "6) Super poder\n" \
+        "> "\
+    )
+
+    #define OPCOES_6() \
+    printf( \
+        "1) População\n" \
+        "2) Área\n" \
+        "3) PIB\n" \
+        "4) Número de Pontos Turísticos\n" \
+        "5) Densidade demográfica\n" \
+        "6) Super poder\n" \
+        "> "\
+    )
+
+    #define OPCOES_7() \
+    printf( \
+        "1) População\n" \
+        "2) Área\n" \
+        "3) PIB\n" \
+        "4) Número de Pontos Turísticos\n" \
+        "5) Densidade demográfica\n" \
+        "6) PIB per Capita\n" \
+        "> "\
+    )
+
 #endif
