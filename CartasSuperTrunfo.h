@@ -40,7 +40,6 @@ typedef struct Trunfo {
         "4) Número de Pontos Turísticos\n" \
         "5) Densidade demográfica\n" \
         "6) PIB per Capita\n" \
-        "7) Super poder\n" \
         "> "\
     )
 
@@ -51,7 +50,6 @@ typedef struct Trunfo {
         "3) Número de Pontos Turísticos\n" \
         "4) Densidade demográfica\n" \
         "5) PIB per Capita\n" \
-        "6) Super poder\n" \
         "> "\
     )
 
@@ -62,7 +60,6 @@ typedef struct Trunfo {
         "3) Número de Pontos Turísticos\n" \
         "4) Densidade demográfica\n" \
         "5) PIB per Capita\n" \
-        "6) Super poder\n" \
         "> "\
     )
 
@@ -73,7 +70,6 @@ typedef struct Trunfo {
         "3) Número de Pontos Turísticos\n" \
         "4) Densidade demográfica\n" \
         "5) PIB per Capita\n" \
-        "6) Super poder\n" \
         "> "\
     )
 
@@ -84,7 +80,6 @@ typedef struct Trunfo {
         "3) PIB\n" \
         "4) Densidade demográfica\n" \
         "5) PIB per Capita\n" \
-        "6) Super poder\n" \
         "> "\
     )
 
@@ -95,7 +90,6 @@ typedef struct Trunfo {
         "3) PIB\n" \
         "4) Número de Pontos Turísticos\n" \
         "5) PIB per Capita\n" \
-        "6) Super poder\n" \
         "> "\
     )
 
@@ -106,18 +100,6 @@ typedef struct Trunfo {
         "3) PIB\n" \
         "4) Número de Pontos Turísticos\n" \
         "5) Densidade demográfica\n" \
-        "6) Super poder\n" \
-        "> "\
-    )
-
-    #define OPCOES_7() \
-    printf( \
-        "1) População\n" \
-        "2) Área\n" \
-        "3) PIB\n" \
-        "4) Número de Pontos Turísticos\n" \
-        "5) Densidade demográfica\n" \
-        "6) PIB per Capita\n" \
         "> "\
     )
 

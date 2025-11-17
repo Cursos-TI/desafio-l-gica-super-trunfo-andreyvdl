@@ -29,17 +29,15 @@ static int selecionarAtributo(const int atributo_anterior) {
       OPCOES_5();
     else if (atributo_anterior == 6)
       OPCOES_6();
-    else if (atributo_anterior == 7)
-      OPCOES_7();
 
     if (scanf("%d", &escolha) == EOF)
       exit(1);
 
-    if (escolha < 1 || escolha > 7) {
+    if (escolha < 1 || escolha > 6) {
       printf("Valor inserido é inválido\n");
       escolha = 0;
       LIMPAR_RESTO_DO_INPUT();
-    } else if (atributo_anterior != 0 && escolha > 6) {
+    } else if (atributo_anterior != 0 && escolha > 5) {
       printf("Valor inserido é inválido\n");
       escolha = 0;
       LIMPAR_RESTO_DO_INPUT();
@@ -50,44 +48,25 @@ static int selecionarAtributo(const int atributo_anterior) {
 }
 
 static void  compararCartas(Trunfo *cartas, int *atributos) {
-  float somas[2] = {0.f};
-
   for (int i = 0; i < 2; ++i) {
     switch (atributos[i]) {
       case 1:
         compararPopulacao(cartas);
-        somas[0] += (float)cartas[0].populacao;
-        somas[1] += (float)cartas[1].populacao;
         break;
       case 2:
         compararArea(cartas);
-        somas[0] += cartas[0].area;
-        somas[1] += cartas[1].area;
         break;
       case 3:
         compararPIB(cartas);
-        somas[0] += cartas[0].pib;
-        somas[1] += cartas[1].pib;
         break;
       case 4:
         compararPontoTuristicos(cartas);
-        somas[0] += (float)cartas[0].num_pontos_turisticos;
-        somas[1] += (float)cartas[1].num_pontos_turisticos;
         break;
       case 5:
         compararDensidadeDemografica(cartas);
-        somas[0] += cartas[0].densidade_populacional;
-        somas[1] += cartas[1].densidade_populacional;
         break;
       case 6:
         compararPIBPerCapita(cartas);
-        somas[0] += cartas[0].pib_per_capita;
-        somas[1] += cartas[1].pib_per_capita;
-        break;
-      case 7:
-        compararSuperPoder(cartas);
-        somas[0] += cartas[0].super_poder;
-        somas[1] += cartas[1].super_poder;
         break;
       default:
         printf("OPA algo deu errado!\n");
@@ -95,7 +74,7 @@ static void  compararCartas(Trunfo *cartas, int *atributos) {
     }
   }
 
-  compararSoma(cartas, somas);
+  compararSuperPoder(cartas);
 }
 
 int main() {

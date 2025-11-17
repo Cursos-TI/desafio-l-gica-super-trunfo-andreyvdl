@@ -105,7 +105,7 @@ void compararPIBPerCapita(Trunfo *cartas) {
 
 void compararSuperPoder(Trunfo *cartas) {
   printf(
-    "\nComparação de cartas (Atributo: Super Poder):\n"
+    "\nComparação de cartas (Soma dos Atributos):\n"
     "Carta 1 - %s (%s): %.2f\n"
     "Carta 2 - %s (%s): %.2f\n",
     cartas[0].nome_do_pais, cartas[0].estado, cartas[0].super_poder,
@@ -118,21 +118,4 @@ void compararSuperPoder(Trunfo *cartas) {
     printf("Resultado: Carta 1 (%s) Venceu!\n", cartas[0].nome_do_pais);
   else
     printf("Resultado: Carta 2 (%s) Venceu!\n", cartas[1].nome_do_pais);
-}
-
-void compararSoma(Trunfo *cartas, float *somas) {
-  printf(
-    "\nComparação de cartas (Atributo: Soma dos atributos):\n"
-    "Carta 1 - %s (%s): %.2f\n"
-    "Carta 2 - %s (%s): %.2f\n",
-    cartas[0].nome_do_pais, cartas[0].estado, somas[0],
-    cartas[1].nome_do_pais, cartas[1].estado, somas[1]
-  );
-
-  if (somas[0] == somas[1])
-    printf("Resultado: Empate!\n");
-  else if (somas[0] > somas[1])
-    printf("Resultado: Carta 1 (%s) Venceu!\n", cartas[0].nome_do_pais);
-  else
-    printf("Resultado: Carta 2 (%s) Venceu\n", cartas[1].nome_do_pais);
 }
